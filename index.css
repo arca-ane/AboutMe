@@ -1,0 +1,222 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    content: "";
+    background-color: rgb(14 13 13 / 97%);
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    position: absolute;
+    z-index: -1;
+
+}
+
+li{
+    list-style: none;
+}
+header{
+    background: #181716;
+    color: #fcfcfc;
+    left: 0;
+    position: fixed;
+    top: 0;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: -webkit-transform .8s ease-in-out;
+    -o-transition: transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+    transition: transform .8s ease-in-out,-webkit-transform .8s ease-in-out;
+    width: 100%;
+    z-index: 1;
+}
+/* Navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-top: 3px solid white;
+    border-bottom: 2px solid white;
+}
+/* Navbar Logo and img */
+#name{
+    margin: 9px 6px;
+}
+
+#name p{
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(190,229,190);
+}
+    
+#git{
+    margin: 6px 8px;
+    position: absolute;
+    right:56px;
+}
+
+#git img{
+    height: 40px;
+}
+
+#linkedin{
+    margin: 7px 5px;
+    position: absolute;
+    right:5px;
+}
+
+#linkedin img{
+    height: 40px;
+}
+
+#mail{
+    margin: 7px 5px;
+    position: absolute;
+    right:110px;
+}
+
+#mail img{
+    height: 50px;
+}
+
+/* #mail img:hover{
+    background-color: white;
+    
+} */
+
+#insta{
+    margin: 7px 5px;
+    position: absolute;
+    right:150px;
+}
+
+#insta img{
+    height: 55px;
+}
+/* Navbar list items */
+
+#navbar ul{
+    display: flex;
+    position: absolute;
+    left:275px;
+}
+#navbar::before{
+    content: "";
+    background-color: rgba(0,0,0,1);
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    position: absolute;
+    z-index: -1;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a{
+    padding: 3px 20px;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* About Section */
+.about{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr 3fr 3fr;
+    height: 100%;
+    margin-top: 70px;
+
+}
+
+.about p{
+   grid-column: 1/span 3;
+   grid-row: 1/span 1;
+   color: white;
+   font-size: 2.8rem;
+   justify-content: center;
+   text-align: center;
+   margin-top: 5px;
+}
+.about div{
+    grid-column: 1/span 3;
+    grid-row: 2/span 2;
+    color: white;
+    margin-top: 18px;
+    border-top: 8px solid white;
+    border-bottom: 8px solid white;
+    height: 130px;
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 30px;
+}
+.about div ul li span{
+    color: rgb(155 137 137 / 80%);
+}
+
+.about img{
+    grid-column: 4/span 3;
+    grid-row: 1/span 3;
+    height: 230px;
+    margin-top: 30px;
+    border: 12px solid white;
+}
+
+/* Skills Section */
+.skills{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr 3fr 3fr;
+    height: 100%;
+
+}
+
+.skills p{
+   grid-column: 4/span 3;
+   grid-row: 1/span 1;
+   color: white;
+   font-size: 2.8rem;
+   justify-content: center;
+   text-align: center;
+}
+.skills div{
+    grid-column: 4/span 3;
+    grid-row: 2/span 2;
+    color: white;
+    margin-top: 18px;
+    border-top: 8px solid white;
+    border-bottom: 8px solid white;
+    height: 160px;
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 8px;
+    display: flex;
+}
+.skills div ul{
+    margin-right: 30px;
+}
+.skills div ul span{
+    color: rgb(155 137 137 / 80%);
+    font-size: 1.5rem;
+    padding: 2px;
+    margin: -3px;
+}
+
+.skills img{
+    grid-column: 1/span 3;
+    grid-row: 1/span 3;
+    height: 230px;
+    margin-top: 30px;
+    position: absolute;
+    right: 50%;
+    border: 12px solid white;
+}
